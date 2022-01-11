@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mr-cont">
+        <h2>收货信息填写</h2>
+        <form action="login.html">
+            <div>姓名:
+                <input type="text"><span class="red">*****必填项</span>
+            </div>
+            <div>电话:
+                <input type="text"><span class="red">*****必填项</span>
+            </div>
+            <div>是否允许代收:
+                <label for="shi">是<input type="radio" name="receive" id="shi" checked></label>
+                <label for="fou">否<input type="radio" name="receive" id="fou"></label>
+            </div>
+            <div class="addr">地址:
+                <input type="text" value="--省" size="5" maxlength="5">
+                <input type="text" placeholder="--市" size="5" maxlength="5">
+            </div>
+            <div>
+                <p>具体地址: <span claas="red">*****必填项</span></p>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div id="btn">
+                <input type="submit" value="提交">
+                <input type="button" value="保存" onclick="alert('保存信息成功')">
+                <input type="reset" value="重填">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
